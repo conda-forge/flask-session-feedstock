@@ -1,5 +1,5 @@
 {% set name = "flask-session" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Flask-Session-{{ version }}.tar.gz
-  sha256: c9ed54321fa8c4ca0132ffd3369582759eda7252fb4b3bee480e690d1ba41f46
+  sha256: 2f3954a8ca2fd4fdc9ffda97f5f469668f5f18fab0fe2f69d496d17be312d96e
 
 build:
   noarch: python
@@ -20,8 +20,8 @@ requirements:
     - pip
   run:
     - python >=3.7
+    - flask >=0.8,<2.3
     - cachelib
-    - flask >=0.8
 
 test:
   imports:
