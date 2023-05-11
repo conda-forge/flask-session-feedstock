@@ -17,10 +17,11 @@ build:
 requirements:
   host:
     - python >=3.7
+    - flit_core <4
     - pip
   run:
     - python >=3.7
-    - flask >=0.8,<2.3
+    - flask >=2.2
     - cachelib
 
 test:
@@ -32,10 +33,9 @@ test:
     - pip
 
 about:
-  home: https://github.com/fengsp/flask-session
-  summary: Adds server-side session support to your Flask application
+  summary: Server-side session support for Flask
   license: BSD-3-Clause
-  license_file: LICENSE
+  license_file: LICENSE.rst
 
 extra:
   recipe-maintainers:
