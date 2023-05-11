@@ -33,6 +33,7 @@ test:
     - pip
 
 about:
+  home: https://github.com/pallets-eco/flask-session
   summary: Server-side session support for Flask
   license: BSD-3-Clause
   license_file: LICENSE.rst
