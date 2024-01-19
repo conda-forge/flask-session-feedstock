@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flask_session-{{ version }}.tar.gz
   sha256: b1ed06cf4c5a211305579a132e81307d242cec6fe2714a276405730ffd22a034
 
 build:
