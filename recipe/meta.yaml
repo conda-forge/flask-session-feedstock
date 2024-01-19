@@ -1,13 +1,13 @@
 {% set name = "flask-session" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Flask-Session-{{ version }}.tar.gz
-  sha256: 190875e6aebf2953c6803d42379ef3b934bc209ef8ef006f97aecb08f5aaeb86
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: b1ed06cf4c5a211305579a132e81307d242cec6fe2714a276405730ffd22a034
 
 build:
   noarch: python
