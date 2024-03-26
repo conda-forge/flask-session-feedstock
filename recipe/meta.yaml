@@ -1,5 +1,5 @@
 {% set name = "flask-session" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flask_session-{{ version }}.tar.gz
-  sha256: 88e63df090e548373ff0f5e7e1a8333b5e8a5ceaebb2506571138c58351b6886
+  sha256: 20e045eb01103694e70be4a49f3a80dbb1b57296a22dc6f44bbf3f83ef0742ff
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - flit-core <4
     - pip
   run:
+    - cachelib
     - python >=3.8
     - flask >=2.2
     - msgspec >=0.18.6
