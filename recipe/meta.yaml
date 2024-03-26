@@ -24,6 +24,7 @@ requirements:
     - python >=3.8
     - flask >=2.2
     - msgspec >=0.18.6
+    - cachelib
 
 test:
   imports:
