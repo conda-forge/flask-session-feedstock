@@ -20,7 +20,6 @@ requirements:
     - flit-core <4
     - pip
   run:
-    - cachelib
     - python >=3.8
     - flask >=2.2
     - msgspec >=0.18.6
